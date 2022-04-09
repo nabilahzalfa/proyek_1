@@ -38,11 +38,11 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `name`, `price`, `deleted`) VALUES
-(1, 'Item 1', 25, 1),
-(2, 'Item 2', 45, 0),
-(3, 'Item 3', 20, 0),
-(4, 'Item 4', 15, 1),
-(5, 'Item 5', 20, 0);
+(1, 'Soto Ayam', 15000, 1),
+(2, 'Rendang', 25000, 0),
+(3, 'Sate Ayam', 10000, 0),
+(4, 'Ayam Bakar', 15000, 1),
+(5, 'Gurame Goreng', 20000, 0);
 
 -- --------------------------------------------------------
 
@@ -67,12 +67,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `customer_id`, `address`, `description`, `date`, `payment_type`, `total`, `status`, `deleted`) VALUES
-(1, 2, 'Address 2', 'Sample Description 1', '2017-03-28 17:32:41', 'Wallet', 150, 'Yet to be delivered', 0),
-(2, 2, 'New address 2', '', '2017-03-28 17:43:05', 'Wallet', 130, 'Cancelled by Customer', 1),
-(3, 3, 'Address 3', 'Sample Description 2', '2017-03-28 19:49:33', 'Cash On Delivery', 130, 'Yet to be delivered', 0),
-(4, 3, 'Address 3', '', '2017-03-28 19:52:01', 'Cash On Delivery', 130, 'Cancelled by Customer', 1),
-(5, 3, 'New Address 3', '', '2017-03-28 20:47:28', 'Wallet', 285, 'Paused', 0),
-(6, 3, 'New Address 3', '', '2017-03-30 00:43:31', 'Wallet', 325, 'Cancelled by Customer', 1);
+(1, 2, 'Address 2', 'Sample Description 1', '2017-03-28 17:32:41', 'Wallet', 150000, 'Yet to be delivered', 0),
+(2, 2, 'New address 2', '', '2017-03-28 17:43:05', 'Wallet', 130000, 'Cancelled by Customer', 1),
+(3, 3, 'Address 3', 'Sample Description 2', '2017-03-28 19:49:33', 'Cash On Delivery', 130000, 'Yet to be delivered', 0),
+(4, 3, 'Address 3', '', '2017-03-28 19:52:01', 'Cash On Delivery', 130000, 'Cancelled by Customer', 1),
+(5, 3, 'New Address 3', '', '2017-03-28 20:47:28', 'Wallet', 28500, 'Paused', 0),
+(6, 3, 'New Address 3', '', '2017-03-30 00:43:31', 'Wallet', 32500, 'Cancelled by Customer', 1);
 
 -- --------------------------------------------------------
 
@@ -93,20 +93,20 @@ CREATE TABLE `order_details` (
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `item_id`, `quantity`, `price`) VALUES
-(1, 1, 2, 2, 90),
-(2, 1, 3, 3, 60),
-(3, 2, 2, 2, 90),
-(4, 2, 3, 2, 40),
-(5, 3, 2, 2, 90),
-(6, 3, 3, 2, 40),
-(7, 4, 2, 2, 90),
-(8, 4, 3, 2, 40),
-(9, 5, 2, 5, 225),
-(10, 5, 3, 2, 40),
-(11, 5, 5, 1, 20),
-(12, 6, 2, 5, 225),
-(13, 6, 3, 3, 60),
-(14, 6, 5, 2, 40);
+(1, 1, 2, 2, 90000),
+(2, 1, 3, 3, 60000),
+(3, 2, 2, 2, 90000),
+(4, 2, 3, 2, 40000),
+(5, 3, 2, 2, 90000),
+(6, 3, 3, 2, 40000),
+(7, 4, 2, 2, 90000),
+(8, 4, 3, 2, 40000),
+(9, 5, 2, 5, 225000),
+(10, 5, 3, 2, 40000),
+(11, 5, 5, 1, 20000),
+(12, 6, 2, 5, 225000),
+(13, 6, 3, 3, 60000),
+(14, 6, 5, 2, 40000);
 
 -- --------------------------------------------------------
 
@@ -219,7 +219,7 @@ CREATE TABLE `wallet_details` (
   `wallet_id` int(11) NOT NULL,
   `number` varchar(16) NOT NULL,
   `cvv` int(3) NOT NULL,
-  `balance` int(11) NOT NULL DEFAULT '2000'
+  `balance` int(11) NOT NULL DEFAULT '200000'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -227,11 +227,11 @@ CREATE TABLE `wallet_details` (
 --
 
 INSERT INTO `wallet_details` (`id`, `wallet_id`, `number`, `cvv`, `balance`) VALUES
-(1, 1, '6155247490533921', 983, 3430),
-(2, 2, '1887587142382050', 772, 1850),
-(3, 3, '4595809639046830', 532, 1585),
-(4, 4, '5475856443351234', 521, 2000),
-(5, 5, '9076633115663264', 229, 2000);
+(1, 1, '6155247490533921', 983, 343000),
+(2, 2, '1887587142382050', 772, 185000),
+(3, 3, '4595809639046830', 532, 158500),
+(4, 4, '5475856443351234', 521, 200000),
+(5, 5, '9076633115663264', 229, 200000);
 
 --
 -- Indexes for dumped tables
