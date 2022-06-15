@@ -58,11 +58,11 @@ else{
             <p class="center login-form-text">Login for Food Ordering System</p>
           </div>
         </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input name="username" id="username" type="text">
-            <label for="username" class="center-align">Username</label>
+        <div class="row margin" style="color: #5a6433;">
+          <div class="input-field col s12" style="color: #5a6433;">
+            <i class="mdi-social-person-outline prefix" style="color: #5a6433;"></i>
+            <input name="username" id="username" type="text" style="color: #5a6433;">
+            <label for="username" class="center-align" style="color: #5a6433;">Username</label>
           </div>
         </div>
         <div class="row margin">
