@@ -125,8 +125,8 @@ include 'includes/connect.php';
                     </ul>
                 </div>
                 <div class="col col s8 m8 l8">
-                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown"><?php echo $name;?> <i class="mdi-navigation-arrow-drop-down right"></i></a>
-                    <p class="user-roal"><?php echo $role;?></p>
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown"><?php echo $_SESSION["name"];?> <i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <p class="user-roal"><?php echo $_SESSION["role"];?></p>
                 </div>
             </div>
             </li>
